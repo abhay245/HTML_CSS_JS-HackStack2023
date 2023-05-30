@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  max-height: 10vh;
+  margin: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav-logo {
+  font-weight: bold;
+  color: #0a0a0a;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-img {
+  margin: 5px;
+}
+
+form.search-container input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  float: left;
+  width: 80%;
+  border: none;
+  outline: none;
+}
+
+form.search-container button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  color: black;
+  background-color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+form.search-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
+
+.search-container i {
+  margin-left: 5px;
+  color: #888;
+}
+
+.sidebar {
+  width: 20%;
+  height: 100%;
+  color: #fafafa;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #0a0a0a;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+.add-button {
+  display: block;
+  margin-top: 50px;
+  background-color: #000;
+  color: #fafafa;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  width: 80%;
+  height: 100%;
+}
+
+.movie-tile {
+  width: calc(80% / 3);
+  padding: 10px;
+  height: auto;
+  background-image: url('movie_poster.jpg');
+  background-size: cover;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.movie-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.movie-details {
+  text-align: center;
+}
+
+.movie-title,
+.movie-rating,
+.movie-year {
+  font-weight: bolder;
+  margin-bottom: 5px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.movie-rating,
+.movie-year {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.movie-genre {
+  text-align: left;
+  font-size: 16px;
+  color: #0feffd;
+}
+
